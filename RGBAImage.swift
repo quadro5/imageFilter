@@ -1,3 +1,5 @@
+// cited from ios Intro
+
 import UIKit
 
 public struct Pixel {
