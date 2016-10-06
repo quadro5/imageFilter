@@ -1,8 +1,6 @@
 import Foundation
 import UIKit
 
-
-
 // Exp
 // 1. use singlton to instantiate "FilterManager"
 // 2. use "FilterTemplateDict" to store the template filter's enum
@@ -65,11 +63,9 @@ public class FilterManager {
         } else {
             FilterListDict[singleFilter]!.push(defaultValue)
         }
-        
-        
-        
     }
-     // add filter to sequence
+    
+    // add filter to sequence
     public func adding(mixedFilter: String, to array: [Int?] = [nil, nil, nil, nil, nil]) {
         // match the key word
         if FilterTemplateDict[mixedFilter] == nil || FilterTemplateDict[mixedFilter]! != .mixedFilter {
@@ -95,7 +91,6 @@ public class FilterManager {
             }
         }
         //FilterListDict[mixedFilter]!.printAll()
-        
     }
     
     // performing filter sequence
